@@ -71,7 +71,7 @@ def detect_and_predict_mask(frame, model, face_detection, draw_landmarks=True):
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 255), 2)
 
         # Put the prediction label above the bounding box
-        cv2.putText(frame, f"Prediction: {label}", (x, y-10),
+        cv2.putText(frame, f"{label}", (x, y-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
         # If draw_landmarks flag is True, draw face landmarks on the frame
